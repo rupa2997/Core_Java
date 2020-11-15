@@ -1,0 +1,38 @@
+Comparable:
+Comprable is an interface present in java.lang pacakge.we do not need to explicitly import that pcakage.is used for sorting an single element
+which can be integer,string.numeric value bydefault sort in ascending order. string bydefault sort  in alphabetical order.comrable provides compareTo method to sort an element .for implementation of the comparable interface we do not need separate class.
+for the comparable interface object shoubld be comprable
+Comprable meant for defaulr natural sorting order
+
+comprator
+comprator include in java.util package.this package we need to import explicilty.provides multiple sorting sequences.we can sort elements  on
+multiple datatypes at the same time.comparator provides compare method which can be used for sorting.also we need one class to implement comprator interface.
+for the comparator interface object need not to be comprable.
+Comprator meant for customized sorting order.
+whenever we are implemention comprable interface
+
+--package
+--import
+--used for--multiple sorting sequences
+---provides multiple sorting sequences
+--compraTo method---nedd to define separate class
+--object cmprable
+--
+separate class
+
+dynamic method dispatch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

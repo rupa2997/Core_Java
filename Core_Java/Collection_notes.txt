@@ -1,0 +1,167 @@
+Collection Framework:
+we can store any type of objects in collection--store hetrogeneous type of elelments
+--readymade methods
+--no limitations(dynamic)
+--Growable in nature
+--Homegeneous nd hetrogenous data
+--Standard D.S
+-
+interfcaes chils================
+1---------List
+--duplication allowed
+--insertion  order maintain
+1.Arraylist 1.2
+2.Linkedlist 1.2
+3.vector--1.stack(Legacy classes)1.0 old version
+
+2--Set1.2
+--Duplication not allowed
+--insertion order not maintain
+--1.Hashset
+	--2.LinkedHashSet
+
+3.SortedSort 1.2
+--all are in sorted manner--no duplicates
+	5.NavigabelSet(child of sortedset) 1.6--define several methods for navigation purpose
+	TreeSet 1.2
+
+6.Queue  1.5
+if we want to represnt group of individual objects prior to processing
+--Priprity queue
+--Blocking queue
+    --LinkedBlockingQueue
+   --Priority blocking queue
+
+7.map interface  (map and collections are different) 1.2
+--we want to represent a group of objects as key value pairs then we should go for map interface
+--both key and values are objects
+--keys not allow duplicates--values can be duplicated
+
+--hashmap
+	--Linkedhashmap
+--Weakhashmap
+--Identity hashmap
+--hashtable 1.9
+    --dictionari
+    --properties
+
+8.Sorted Map(Child interface of map) 1.2
+--sorted manner according to keys
+
+9.Navigabale map (Child interface of sortedmap)1.6--defines several utility methods for navigable purpose
+  --treemap 1.6
+
+
+Sorting
+natural sorting--comparable interface
+customized sortiong--comparator
+
+if we want collections object one by one
+Cursors
+=======
+1.Enumeratoe I
+2.Iteratoe I
+3.ListIterator I
+
+Utility Classes
+=============
+1.Collections--uthility methods for collections object
+2.Arrays--uthility methods for array object
+
+Collection is a root interface of collection Frameworks
+methods in collections
+--add(object o)
+--addAll(Collection c)
+--remove All(Collection c)
+clear()
+retainAll()
+isEmpty()
+size()
+contains(Object o)
+containsAll(Collection c)
+Object []a=c.toArray();==>convert collection to array
+
+List interfcae specific methods--index play imp roll in list
+====
+add(int index,object o)
+addAll(int index,Collection c)
+remove(int index)
+l.indexOf("a");
+l.lastIndexOf("a");
+get(int index)
+ListIterator listIterator()
+set(int index,Object o)
+
+ArrayList
+========
+whenever we call any object internally e.toString methods are called
+collection is used to transfer object from one place to another place
+--2 constructors
+--every collcetion class implements serilazable interface and clonable interface
+--ArrayList And vector random access are possible
+randomaccess
+--java.util
+--marker interface
+
+
+arraylist,set,map--are not synchronized to make synchronized
+--list 1=Collection.SynchronizedList(Object_name);
+public static set SynchronizedSet(Set s)
+vector are synchronized
+
+LinkedList
+--used stack and queue
+--3 constructors
+
+vectors
+--4 constructors
+capacity initially 10--2*current_capacity
+
+cursors--enumrations--applied to only legacy classes
+
+====================================================
+Set
+duplicates not allowed
+insertion order not preserved
+dosenot contain any new methods only use collection interface methods
+if we enter duplicates it return false
+
+hashset
+=======
+underlying ds is hashtable
+null
+searching--best choicw
+default capacity 16--fill ratio 0.75--4 constructors
+1.2
+
+LinkedHashSet
+--insertion order preserved
+--uderlying ds hashtable+LL
+1.4
+
+Primary Ram
+secondary harddisk
+
+SortedSet
+--Default Natural sorting order
+for num--asecnding
+for string--alphan
+
+Treeset
+--balanced Tree
+--Sorting order
+--Hetrogeneous order not allowed in treeset and treemap
+--null acceptance--only once
+
+Treeset constructors--4
+--prefer--customization sorting order
+
+interface
+comparable--compareto()
+compare--optional--bydefauly present--equals(),compu;sory--compare()
+
+String buffer objects is not implements comparable interface 
+
+
+
+

@@ -1,0 +1,307 @@
+
+https://docs.oracle.com/javase/8/docs/api/
+16/09/2020 (WednesDay)
+--compiler convert source code into machine code
+c++==Editor--source code--compiler-machine code
+giving machine code to pc--platform dependents--customer having diff platformlike mac od rather than windows os it will make problem
+--need to pass source code nd use familour compiler
+
+
+java==games goslinh(ook)--new lang
+while compiler received byte code--then give byte code to customer
+compi not understand byte code--jvm convert byte to machine--identified machine code
+we can send  byte code  to any os--platform independent
+needs to instal jvm to run java prog in every machines
+interpretar code--souce code without any error
+machine code-instruction given to machine --written in binary code--undestandable by computer
+
+byte code--platform independancy achive--inetrmediate code--generate after java sorce code compilation
+
+diff jvm for different machines--it is platform dependent
+platform indepent is achived using byte code
+machine code--dependent on os--PD
+byte code--instruction are written in uniq code
+machine not understand byte code so we need jvm for conversion to machine binary code
+
+java is used for multiple platforms(as per customers avalability (os)
+char ch='a';---va is a memory block--it is container where data can be stored
+c-ascii code
+java-unicode--application that have diff units
+
+FEATURES--
+1)Platform independent-2)support fully enterprise wise applications
+
+robust--java apps are more reliable
+array--indexed elements of similar datatypes--is has fixed size
+
+realibility--compile time and run time checking is done
+exception hamdling--compile time and run time checking is done
+
+secure--java doesn't support pointer
+tranfer data between two machines--between tranfer another application might used that data
+so encrypt data and send over network for security
+it has some encryption and decryption libraries
+java can decrypt that data after receiving
+
+Multithreading
+eg in ms world-single thread application
+--1)write content
+--add images
+---print
+all taskes sequential--1 task at a time
+
+eg--web broswer is multihreded
+--download
+--check mail same time
+--same time visit any social site
+--one task at a time doin--multithreaded application
+
+Object Oriented Programing Languges
+===================================
+--Abstraction--hide complexicity--showing essential things---reduce complexicity of development process
+
+--Polymorphism--mechanism of using one name for multiple forms--reduce complexicity of development process.
+--compile time--method overloading
+and runtime--method overriding
+
+--Encapsulation--bind data and code together
+student class
+ --rno
+--name
+ --genmark()
+--show()
+Employee class
+ --eid
+--ename
+ --calSal()
+ --show()
+
+binding student data withing class itself
+binding employee data withing class itself
+--protect your code from unauthorised access
+
+--Inheritance
+  --all inheritanc are supported in java
+jDK--K=Java development Kit--all requirement provide to develope application
+      -->lib
+      -->compiler
+       -->jre[Java Runtine Environment]
+            -->lib
+            -->JVM [ Java Virtual Machine]
+                  -->Class Loader(loads byte code to jre)
+                  -->Interpreter (converts byte code into exe code)
+
+--while executing java code--1)conversion is done
+2)then program is executed
+JIT--just in time compiler
+--at a particular time when conversion is required
+
+compiler --used to check syntatically erroe and convert in byte code
+interpreter--line by line checking--sequentially--then checked--in case any line containes error it will stop excution nd through error
+javascript is a interpretd lang
+java is compiler lang
+
+when we compile java file then it will create .class file
+
+java program flow
+===============
+souce-->.java --{compile}-javac-->>    byte code will get-i.e .class file
+--jvm is needed to run  java file-->exe code
+
+--while save the java programe save using the class name of file where main method is present and use xetension .java
+--D:
+--cd java-prog
+--(for compilation) -->javac <filename>.java
+  eg javac hello.jav
+byte code is genrated--hello.class
+--(for running)--> java <filename>
+  eg: java hello
+
+
+===================================================================
+17/09/2020 (Thrusday)
+
+static is diff in java nd c
+class hello{
+static void main(string... a){
+ System.out.println("hello.............rupali");
+}
+}
+System--->is an inbuilt java class defined in java.lang package
+println method--pf printstream class.it prints given text to console window
+out is public static void reference variable of java.io.PrintStream type
+
+Relation between source and class file name
+ --
+
+--public class name must be same as source file name
+--if we note declare class name as public then we can mention diff name also
+--each nd every class byte code will be generated in location where file is stored(.class)-->>byte code of class file
+--we can mention main method in normal file also insted of public class
+--souce file name must be same as public class if there is more than one publiic class
+
+-->>>>User deefined datatypes
+        --array,class,interface,enum
+
+-->>primitive data types
+1)Boolean type
+ -size not applicable
+2)Numeric Type
+--i...integral type
+    --Charater type
+        --char 2 bytes
+    --Integer Type
+      --byte 1 byte, short-2 bytes, int 4 bytes, long 8 bytes
+--ii..Floating Point Type
+         --float 4 byte , double 6 byte
+
+System.in==>read entered char
+scanner class: inbuild java class that scans the given resouce for any string or primitive value
+
+Scanner class method:
+
+boolean:nextBoolean()
+byte:nextByte()
+short:nextShort()
+int: nextInt()
+long: nextLong()
+float: nextFloat()
+double: nextdDouble()
+String:next()[without space]
+String:nextLine()[with space]
+
+Cmd line arguments
+================== 
+--jvm creates on earray all the arguments populated with it and pass it to the main method
+
+1st loading
+then converting the byte code
+calling main method
+cmf line arg given to main method
+
+
+parseInt==>convert given string into integer
+
+Wrapper type
+===========
+Boolean
+Character
+Byte
+Short
+Integer
+Long
+Float
+Double
+
+Prmitive type
+============
+boolean
+char
+byte
+short
+int
+float
+double
+========================================================
+18/09/2020
+switch case:
+
+switch case syantax
+switch(char| byte | short |int |enum |String expression )
+{
+  case label1 :
+                           statement 1;
+   case label2 :
+                            statement 2 ;
+   default :
+                       statement;
+}
+
+-------------------------------------------------
+loops in java:
+for loop
+=======
+---syntax
+     for(initialization;condition;increment){ }
+codition must be 0 or either one
+if we want to combine more than one condition then use '&' or 'or' operator
+
+while loop
+==========
+---syntax
+while(condition){ }
+
+do while
+========
+---syntax
+do
+{}
+while(condition)
+---------------------------------------------------
+---------------------------------------------------------
+array:array is indexed collection of similar data elements than has fixed size
+array is an object
+make array: 1.declare array variable 
+2.create array
+---array declaration syntax:<element-type><array-name> [];
+   or <element-type> [] <array-name>
+--arrat creation syntax:
+   <array-name>= new <element-type> [size];
+--array declaration and array declaration can be combined
+   <element-type><array-name> []=new <element-type> [size]
+
+array declration eg:int ar[];
+int [] ar;
+int a[],b,c;
+int a[],b[],c[];
+int [] a,b,c;
+
+--array creation --ar= new int[5];
+--------------------------------------
+for each loop [ advance array]
+-----> for traversing any collection
+syntax :
+-----> for (<element-type> <variable-name> : <arra-name>)
+           {}
+---------------------------------------------
+array initialization:
+syntax
+  <element-type><array-name> []= {<element-list>};
+
+or
+ <element-type><array-name> []=new <element-type> [] {<element-list>};
+eg:  int arr[]=new arr[] {a,2,3,4,5};
+     int arr[]={1,2,3,4,5};
+--------------------------------------
+multidimentional array:array of array
+ar0-->
+ar1-->
+ar2-->
+syntax:
+ <element-type><array-name> [][]=new <element-type> [row][cols];
+row: no. of arrays in the array
+cols: no. of elements in each row 
+
+==============================================================
+19/09/2020
+----new ia an operator that allocates memory to the object(to instance variables)
+--constructor are used to initialize object(instance variables)
+Employee e=new Employee();
+e-->reference variable
+new Employee-->object
+
+static variable allocate memory only onse and only on copy is circulate along alll the objects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

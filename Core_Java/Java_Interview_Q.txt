@@ -1,0 +1,263 @@
+1.What is JIT
+2.we can save java file with .java only
+3.difference between them jvm,jdk,jre
+4.Is Java object based or object oriented 
+5.difference between cpp and java
+6.Can you explain me Flow of execution of java program? 
+7.What is byte code
+8.what is class loader
+9.how we allocate array in 
+10.Array of string can i store the integer value
+11.how many loops are there in java
+12.in switch we can pass string,char==>we can pass
+13.why array index start at 0 only
+syntax of for loop
+14.why do we need jdk
+15Why main method is public and static? 
+16. who is super set
+17 JIT,interpreter
+18 How many main method we can write in a program? 
+19.What happens internally when main method is called?
+20.what are packages
+21.Can we run a program without main? 
+22.Properties of packages
+23. why do we used packages in java
+24.what is class path??
+25..Can a. Class file generated using 32 bit java compiler be used on 64 bit java 
+26.public static void sohan--compile --not run--it only check static nd public,void keywords not main
+static public void main--compile nd run
+run or not 
+27.explian public,static ,void ,main,arguments,string--class--args--variable
+28 can we run program without main
+29.how will we access command line argu in program
+at runtime
+30.what are the advantages of oops
+31.diff between abstractionn and inheritance
+32.how constructor chaining works
+33.what is dyanamic binding
+34.explain each keyword of System.out.println
+35.difference between stack and heap memory
+object gets memory in heap section
+36.difference between this and super keyword
+37.why we used super in default constructor--to schive constructor chaining
+38.why pointers are not used in java
+39.explain jvm architecture
+40.what is the default access specifier in java.
+41.why java is not called as 100% object oriented langauges
+42.does constructor returns any value
+43.static blocks
+44.can u excute program without main method-we can compile
+45.why multiple inheritance is not suported in java--it creates ambiguity
+46.if we removed static modifier from the main method what will happen??
+47.what is variable arguments??
+48.what is polymorphism?
+=================================================================================
+1.Abstract class must have only abstract methods. True or false?
+
+2. Is it compulsory for a class which is declared as abstract to have at least one abstract method?
+
+3.Can we use the “abstract” keyword with constructor, Instance Initialization Block and Static Initialization Block?
+
+4.Why can final and abstract can not be used at a time?
+Can we instantiate a class which does not have even a single abstract method but declared as abstract?
+
+5.Can we declare abstract methods as private? Justify your answer?
+
+6.We can’t instantiate an abstract class. Then why constructors are allowed in abstract class?
+
+ 7.Can we declare abstract methods as static?
+
+ 8.Can a class contain an abstract class as a member?
+
+9.Abstract classes can be nested. True or false?
+
+10.Can we declare abstract methods as synchronized?
+
+11.Can we declare the local inner class as abstract?
+
+12.Can abstract method declaration include throws clause?
+
+13.Can we re-assign a value to a field of interfaces?
+
+14.Can we declare an Interface with an “abstract” keyword?
+
+ 15.For every Interface in java, .class file will be generated after compilation. True or false?
+
+ 16.Can we override an interface method with visibility other than public?
+
+ 17.Can interfaces become local members of the methods?
+
+18.Can an interface extend a class?
+
+19.Like classes, does interfaces also extend Object class by default?
+
+20.Can interfaces have static methods?
+
+21.Can an interface have a class or another interface as it’s members?
+
+22.What are marker interfaces? What is the use of marker interfaces?
+
+23.What is the use of the final keyword in java?
+
+24.Can we change the state of an object to which a final reference variable is pointing?
+
+25.What is the main difference between abstract methods and final methods?
+
+26What is the use of final class?
+
+27Can we change the value of an interface field? If not, why?
+
+28Where can we initialize a final non-static global variable if it is not initialized at the time of declaration?
+
+29What are final class, final method and final variable?
+
+30Where can we initialize a final static global variable if it is not initialized at the time of declaration?
+
+31Can we use non-final local variables inside a local inner class?
+
+32Can we declare constructors as final?
+
+33Can you create an object without using a new operator in Java?
+
+34.is java 100% object oriented
+
+35.Types of inheritance
+
+36.can we extends two classes
+
+37.use of constructor
+
+38.default specifier for constructor--public
+
+39.can we define constructor private--yes--then we cannt call to the outside of the class
+
+40.Diamond problem--how java resolved it--by using interface
+
+41.what is abstract class
+
+42.what is static class
+
+43.have you written main method in java--why it is public  static void main 
+
+44.explain 4 pillaours of oops
+
+45.diff between cpp and java
+
+46.how to call constructor
+
+47.what is JIT
+
+48.what is Constructor chaining
+
+49.diff between this and super
+
+50.how we implement multiple inheritance
+
+51.object class is the base class-which package is this--java.lang
+
+52.what is collection
+
+53.diff between array and arrayList
+
+54.what is jre,jdk
+
+55.What is string--it is a class
+
+56.diff between stringBuilder, stringBuffer
+
+57.Constructor have any return type
+
+58.Access specifier--explain Scope of each one
+default can access withing same package
+
+59.can we declare Abstract method final
+
+60.explain Compile time and runtime polymorphism
+
+61.what is single ton class??
+
+62.what is exception
+   diff between error and exception
+have you heard about checked and unchecked exception
+
+63.what is the purpose of string
+
+64.what is thread
+
+65.what is collection
+66.causes of exception--ans types of exception
+
+67.How to handle exception
+
+68.what is difference between throws and throw
+
+69.what is final keyword in java
+
+70.what is upcasting and downcasting
+
+java program run without JDk
+--java is machine independent
+--it is part of jre
+71.Equals method in object class
+
+72.how many ways are there to create string object in java
+two ways
+1.String literal
+2.Using new keyword
+
+72.how to write for each loop
+
+73.diff between ArrayList and linkedlIst
+
+74.how many ways are there to traversed the list
+
+75.there are some methods for iterating interator
+
+76diff between hashset and linkedhashset
+
+77.can we traverse the linkedlist using for each loop
+
+78.where we used for loop and for each loop
+
+79.how many keywords are to handle exception?? explain exception
+
+80.why to forward the exception
+
+81.need of handling the exception
+
+82.oversiding rule for accessitibility
+
+83.when ref is of superclass and object is of subclass which method will be called
+
+84.what is multidimentional array
+
+85.diff between 1d and 2d array
+
+86.what is 3d array--array of 2 d array
+
+87.how to achive encapsulation in java--data security
+by using data hiding
+how to achive data hiding
+
+88.how to create object
+what is reference variable
+what is new keyword--dynamically allocated memory
+
+89.what is dynamic method dispatch in java
+
+90.what is collections
+
+91.how these asending order is maintain in the treeset
+--using comparable
+
+92.how many parameters in comprable and comparator
+name of the method in comparable--compareto
+name of the method in comparator--compare
+
+93.how uniqness is maintain in the hashset and linkedhashset
+equals and hashcode method
+
+94.how uniqness is maintain in treset
+--only comparator and comprable
+
+95.what is final in java--method--cannot overide, class--cannot give the implementation,variable--cannot changr value

@@ -1,0 +1,126 @@
+Interface==
+-interface can extends any number of interface at a time--eg 
+interface a extends b,c{}
+--interface cannot provide implementation of the method 
+--In interface all methods bydefault public abstract
+  --if class implements interface and provide implementations for only one method then make that class abstract nd that method public
+--a class can extends only one class at a time
+-class can implements multiple interface at a time
+eg:-X extends Y--Both x and y can be either class or interface
+e.g x extends y implements z x-xlass,y-class,z-interface
+e.g x extends y,z-----x ,y,z--interfaces
+e.g x implements y,z--------x-class,y,z--interfaces
+why interface method are public--
+public=to make this method available to every implementation class.
+abstract=--implementation class are responsible to provide implementations
+==all declaration in interface valid==
+public void main();
+void main();
+abstract void main();
+public abstract void main();
+
+--we can't declare interface method private protected instead of public
+--we can't declare interface method static,final,synchronized,native,strictfp instead of abstract
+
+--interface variables are public static final
+---------------------
+  --public--available to every implementation class
+--static without existing object also implementation class can access these variable
+--final--if one implementation class changes value remaning imple classes will e affected-to restrict these every interface variable is always final
+eg- int x=10;--initialization at the time of declration only--otherwise compile time error
+
+public--private--protected--not available
+static--serilablenot available
+final--volatile--not available
+--inside implementation class we can access interface variable--but we can't modify value
+
+--if two interface class contain same method,signature,return type then at the time of implementation class it should give implementation only ones
+--if two interface class contain same method,signature,return type but diff argument types then at the time of implementation class it should give implementation for both the methods of interfaces
+these method said as overloaded methods
+--if two interface class contain same method,signature,but different return type,same argument types then at the time of implementation class it should give implementation for only one method of interfaces in the implementation classes
+and make that class as abstract bcz another method of another interface class is remamaning
+
+--if two interface conatains same variable name
+--then in class implementation we can write
+<interface_name>.<variable_name>;
+--there is solution for variable naming conflicts but no solution for method naming conflicts
+
+======Following are marker interface with some ability===
+--Marker Interface or  ability interface or tag interface--if interface dosn't conain any methods and 
+by implementing that interface if objects get some extra ability called as marker interface
+--Seriliazable interface-dosn't contain any methods-- save that object to the file. and send over the network
+--Clonable Interface--dosn't contain any methods--if the object class
+clone method is avaible in object class--exactly duplicates clone objects
+--random access
+--single thread model
+
+abstract class AdapterX implements <interface_name>
+===using these privide all interface methods implementation dummy
+in adapter class and extent any one method in implementation class further
+
+Interfaces vs Abstract vs Concrete class
+===================================
+--If we have only requirement(specification) then go with interface
+--if we talk about partially implementation--then go with abstract class
+--if we talk about complete  implemetation --then go with concreate
+Interfaces --Plan--eg servlet
+Abstract --Creation but not complete--partially completed bulding--generic servelet,http servlet
+Concrete class --Fully implemetation--fully completed bulding--eg: my own servlet
+
+Diff between Interface and abstract class
+=====================================
+interface class--100% pure abstract class
+=============
+every method in interface must be public nd abstract
+  --we can't declare method pri,prot,native,sttaic,final
+abstract class--every method in abstract class need not be public and     --every method in interface need ti be public and abstract
+--variables--public static final by default--can't declare private protected,voilatile,transisit
+--variable--intialization at the time of declarartions--it can't modify beause it declraed final
+--can't allow static block and instance blocks
+--can't allow constructor--because construtcor is used for initialization ppurpose but in interfcae variable are ststic final we cant initialize from main method
+--no chance of instace variable--constructor not required
+--every method must be abstract
+-----object creation not costly
+   
+
+abstract--we have concrete method also
+===========
+  ---we can create private protected synchronized method--no striction on modifiers
+--every method in abstract need not be public and abstract
+--variable--we can declare private protected,voilatile,transisit
+--variable--no testriction to initilized variable at the time of declration--
+and it can be modified also
+--allow static block and instance blocks
+--allow /declare constructor
+--we can't create object of abstract class but contains constructor
+---Because when we call create child class object abstract class default constructor called //code reusebility//child class object  initialization only
+--constructor is used only initialization to objets purpose//useful in every child object creation
+--it contance instance variable for child class
+---object creation costly
+   --const of abstract class will also called when cretaed child class object
+
+========we can't create object of abstract and interface class 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

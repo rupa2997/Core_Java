@@ -1,0 +1,71 @@
+26.	Create an array of 17 elements in 5 rows.  And calculate sum of all elements.
+27.	Write a program to fine the smallest and greatest number present in the array of integer type.
+import java.util.Scanner;
+class Q27
+{
+  public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   System.out.println("Enter N number: ");
+    int num=sc.nextInt();
+    int arr[]=new int[num];
+    System.out.println("Enter elements in array: ");
+    for(int i=0;i<arr.length;i++)
+   {
+      arr[i]=sc.nextInt();
+  }
+ int min=arr[0];
+ int max=arr[0];  
+ 
+  for(int i=1;i<arr.length;i++)
+   {
+       if(min>arr[i])
+       {
+         min=arr[i];
+      }
+       if(max<arr[i])
+       {
+         max=arr[i];
+      }
+   }
+ System.out.println("Smallest element in an array is: "+min);
+  System.out.println("Greatest element in an array is: "+max);
+   }
+}
+
+28.	Initialize one String type of array and print the elements using for each loop.
+import java.util.Scanner;
+class Q28
+{
+  public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   System.out.println("Enter N number: ");
+    int num=sc.nextInt();
+    String arr[]=new String[num+1];
+    System.out.println("Enter elements in string array: ");
+   
+ for(int i=0;i<arr.length;i++)
+   {
+      arr[i]=sc.nextLine();
+   }
+  
+ /*for( String a : arr )
+   {
+     System.out.print(a+" ");
+    }*/
+   
+ for(int i=0;i<arr.length;i++)
+   {
+      System.out.print(arr[i]+" ");
+   }
+  
+ }
+}
+
+29.	Write a program to print the total number of one-D arrays in a two-D array and the number of elements in every one-D array present in the two-D arrays.
+30.	Create an integer type 2-D array of size [3X3]. Take the elements from the user and then calculate the sum of the elements present in the diagonal.
+31.	Create a class Student with 2 data members rno and name. Create one method setData() that takes roll number and student name as parameter and stores them in data members rno and name. Create one more method showData() to print the data member values. Create another class ( main class) StudentDemo that creates Student class object and calls setData() and showData() methods.
+32.	Modify the above program (no. 30) to count the no of Student objects created. [ In this program static variable is required ]
+33.	Write a program to demonstrate functionalities of this keyword in java. 
+34.	Create a class Circle that has two data members, one to store the radius and another to store area and three methods first init() method to input radius from user, second calculateArea() method to calculate area of circle and third display() method to display values of radius and area. Create class CircleDemo ( main class) that creates the Circle object and calls init(), calculateArea() and display() methods.

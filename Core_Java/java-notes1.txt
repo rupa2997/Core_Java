@@ -1,0 +1,963 @@
+---------------------------------------------------------------------------------
+Byte==  -128 to 127
+Short== -32768 to -32767
+Int== -2147483648 to 2147483647
+long== -9223372036854775808 to 9223372036854775807
+---------------------------------------------------------------------------------
+
+https://docs.oracle.com/javase/8/docs/api/
+16/09/2020 (WednesDay)
+--compiler convert source code into machine code
+c++==Editor--source code--compiler-machine code
+giving machine code to pc--platform dependents--customer having diff platformlike mac od rather than windows os it will make problem
+--need to pass source code nd use familour compiler
+
+
+java==games goslinh(ook)--new lang
+while compiler received byte code--then give byte code to customer
+compi not understand byte code--jvm convert byte to machine--identified machine code
+we can send  byte code  to any os--platform independent
+needs to instal jvm to run java prog in every machines
+interpretar code--souce code without any error
+machine code-instruction given to machine --written in binary code--undestandable by computer
+
+byte code--platform independancy achive--inetrmediate code--generate after java sorce code compilation
+
+diff jvm for different machines--it is platform dependent
+platform indepent is achived using byte code
+machine code--dependent on os--PD
+byte code--instruction are written in uniq code
+machine not understand byte code so we need jvm for conversion to machine binary code
+
+java is used for multiple platforms(as per customers avalability (os)
+char ch='a';---va is a memory block--it is container where data can be stored
+c-ascii code
+java-unicode--application that have diff units
+
+FEATURES--
+1)Platform independent-2)support fully enterprise wise applications
+
+robust--java apps are more reliable
+array--indexed elements of similar datatypes--is has fixed size
+
+realibility--compile time and run time checking is done
+exception hamdling--compile time and run time checking is done
+
+secure--java doesn't support pointer
+tranfer data between two machines--between tranfer another application might used that data
+so encrypt data and send over network for security
+it has some encryption and decryption libraries
+java can decrypt that data after receiving
+
+Multithreading
+eg in ms world-single thread application
+--1)write content
+--add images
+---print
+all taskes sequential--1 task at a time
+
+eg--web broswer is multihreded
+--download
+--check mail same time
+--same time visit any social site
+--one task at a time doin--multithreaded application
+
+Object Oriented Programing Languges
+===================================
+--Abstraction--hide complexicity--showing essential things---reduce complexicity of development process
+
+--Polymorphism--mechanism of using one name for multiple forms--reduce complexicity of development process.
+--compile time--method overloading
+and runtime--method overriding
+
+--Encapsulation--bind data and code together
+student class
+ --rno
+--name
+ --genmark()
+--show()
+Employee class
+ --eid
+--ename
+ --calSal()
+ --show()
+
+binding student data withing class itself
+binding employee data withing class itself
+--protect your code from unauthorised access
+
+--Inheritance
+  --all inheritanc are supported in java
+jDK--K=Java development Kit--all requirement provide to develope application
+      -->lib
+      -->compiler
+       -->jre[Java Runtine Environment]
+            -->lib
+            -->JVM [ Java Virtual Machine]
+                  -->Class Loader(loads byte code to jre)
+                  -->Interpreter (converts byte code into exe code)
+
+--while executing java code--1)conversion is done
+2)then program is executed
+JIT--just in time compiler
+--at a particular time when conversion is required
+
+compiler --used to check syntatically erroe and convert in byte code
+interpreter--line by line checking--sequentially--then checked--in case any line containes error it will stop excution nd through error
+javascript is a interpretd lang
+java is compiler lang
+
+when we compile java file then it will create .class file
+
+java program flow
+===============
+souce-->.java --{compile}-javac-->>    byte code will get-i.e .class file
+--jvm is needed to run  java file-->exe code
+
+--while save the java programe save using the class name of file where main method is present and use xetension .java
+--D:
+--cd java-prog
+--(for compilation) -->javac <filename>.java
+  eg javac hello.jav
+byte code is genrated--hello.class
+--(for running)--> java <filename>
+  eg: java hello
+
+
+===================================================================
+17/09/2020 (Thrusday)
+
+static is diff in java nd c
+class hello{
+static void main(string... a){
+ System.out.println("hello.............rupali");
+}
+}
+System--->is an inbuilt java class defined in java.lang package
+println method--pf printstream class.it prints given text to console window
+out is public static void reference variable of java.io.PrintStream type
+
+Relation between source and class file name
+ --
+
+--public class name must be same as source file name
+--if we note declare class name as public then we can mention diff name also
+--each nd every class byte code will be generated in location where file is stored(.class)-->>byte code of class file
+--we can mention main method in normal file also insted of public class
+--souce file name must be same as public class if there is more than one publiic class
+
+-->>>>User deefined datatypes
+        --array,class,interface,enum
+
+-->>primitive data types
+1)Boolean type
+ -size not applicable
+2)Numeric Type
+--i...integral type
+    --Charater type
+        --char 2 bytes
+    --Integer Type
+      --byte 1 byte, short-2 bytes, int 4 bytes, long 8 bytes
+--ii..Floating Point Type
+         --float 4 byte , double 6 byte
+
+System.in==>read entered char
+scanner class: inbuild java class that scans the given resouce for any string or primitive value
+
+Scanner class method:
+
+boolean:nextBoolean()
+byte:nextByte()
+short:nextShort()
+int: nextInt()
+long: nextLong()
+float: nextFloat()
+double: nextdDouble()
+String:next()[without space]
+String:nextLine()[with space]
+
+Cmd line arguments
+================== 
+--jvm creates on earray all the arguments populated with it and pass it to the main method
+
+1st loading
+then converting the byte code
+calling main method
+cmf line arg given to main method
+
+
+parseInt==>convert given string into integer
+
+Wrapper type
+===========
+Boolean
+Character
+Byte
+Short
+Integer
+Long
+Float
+Double
+
+Prmitive type
+============
+boolean
+char
+byte
+short
+int
+float
+double
+========================================================
+18/09/2020
+switch case:
+
+switch case syantax
+switch(char| byte | short |int |enum |String expression )
+{
+  case label1 :
+                           statement 1;
+   case label2 :
+                            statement 2 ;
+   default :
+                       statement;
+}
+
+-------------------------------------------------
+loops in java:
+for loop
+=======
+---syntax
+     for(initialization;condition;increment){ }
+codition must be 0 or either one
+if we want to combine more than one condition then use '&' or 'or' operator
+
+while loop
+==========
+---syntax
+while(condition){ }
+
+do while
+========
+---syntax
+do
+{}
+while(condition)
+---------------------------------------------------
+---------------------------------------------------------
+array:array is indexed collection of similar data elements than has fixed size
+array is an object
+make array: 1.declare array variable 
+2.create array
+---array declaration syntax:<element-type><array-name> [];
+   or <element-type> [] <array-name>
+--arrat creation syntax:
+   <array-name>= new <element-type> [size];
+--array declaration and array declaration can be combined
+   <element-type><array-name> []=new <element-type> [size]
+
+array declration eg:int ar[];
+int [] ar;
+int a[],b,c;
+int a[],b[],c[];
+int [] a,b,c;
+
+--array creation --ar= new int[5];
+--------------------------------------
+for each loop [ advance array]
+-----> for traversing any collection
+syntax :
+-----> for (<element-type> <variable-name> : <arra-name>)
+           {}
+---------------------------------------------
+array initialization:
+syntax
+  <element-type><array-name> []= {<element-list>};
+
+or
+ <element-type><array-name> []=new <element-type> [] {<element-list>};
+eg:  int arr[]=new arr[] {a,2,3,4,5};
+     int arr[]={1,2,3,4,5};
+--------------------------------------
+multidimentional array:array of array
+ar0-->
+ar1-->
+ar2-->
+syntax:
+ <element-type><array-name> [][]=new <element-type> [row][cols];
+row: no. of arrays in the array
+cols: no. of elements in each row 
+
+==============================================================
+19/09/2020
+----new ia an operator that allocates memory to the object(to instance variables)
+--constructor are used to initialize object(instance variables)
+Employee e=new Employee();
+e-->reference variable
+new Employee-->object
+
+static variable allocate memory only onse and only on copy is circulate along alll the objects.
+==============================================================
+
+22/08/2020
+p is a reference variable of person type.new person stores the object of reference type
+
+--reference of supertype and object of subtype
+--when we create object of subclass then memoery alloccated for sub and super instance variables and initialization also done sub and super
+
+--if ref is of superclass nd obj is of subclass.we can call all the methods of superclass and all only overwritten methods of subclass
+--if method is overide.gice pref to the overide method bcz object is created subclass
+
+--calling id based on object which we created so 1st it will check it overide if yes then it will runoveride method if not then parent method
+
+--reference casting--
+    --upcasting--subtype to super type
+Person =p=new Employee()
+   --downcasting
+  supertype to subtype
+Employee e=(Employee) p;--downcasting
+--CHECKING IS DONE AT REFERENCE TYPE AND CALLING IS DONE AT PBJECT TYPE
+=========================================
+23/08/2020
+Compile time polymorphism(early binding)
+--Method overloading
+-compiler taking the decision at compile time that which method is to be called is called as compile time polymorphism
+
+Run Time Polymorphism(late binding)(dyanamic method distpatch)
+--method overiding
+--compiler taking the decision that which method is to be called ata runtime  is called as compile time polymorphism
+
+--checking is done on the basis of reference
+
+---Method hiding
+--(static)--subclass method hiding super class method
+--static method cannt be overridden
+
+--any static class call call static metho within same class using method name itself
+--non static method can access instance meme nd static mem directly
+--static method cant access not static method directly
+
+===final
+--final variable--(just like constant)
+--final method--method can't be overriding--it can overloaded
+---final class--no change in the class behaviour(methods can't overided)
+
+===Abstract class
+--can't be instantiated
+--abstract class is used to achive abstraction
+--if any method is declared abstract then must be declared class as abstract
+--abstract class may contain abstract method
+--if the method eg-area has diff for diff class make them abstarct in base class
+--if code is same for all the classes then make them concrete
+
+
+==interface
+--a way to achieve abstraction in java
+-->interface can not be instantiated
+-->if any class inherits any interface then class must override all abstract method of the interface
+-->it makes multiple inheritance possible
+-->all interface methods are by default abstract and public--while inherit mention public access to interface method
+-->all interface variables are public static final known as name constant
+--interface variable bydefault static
+
+===========================================================
+24/06/2020
+INTERFACE
+=============
+diff between abstract and interface class==cannt go for multiple interface
+using abstract and interface we use multiple interface
+
+--MARKER interface
+--an interface without any method
+--Serializable--make copy of the content of the object of file
+
+static Interface--don't want to create subclass--bcz method is static
+we can't create object of static.
+===Default method in Interface
+--in interface create default method--no need to overide interface method in overide class
+
+--in interface we create static,default and abstract method--by default it is default--no need to overide default method--and static method must not overide--not create any subclass in case of static method in interface
+--interface can't be intantiated
+--functional interface:-an interface that has only one abstract method.
+
+==Nested classes:(class in another class)
+1.static class: belongs to class
+--create object of static class to access static inner class
+--<outer_class>.<inner_static class> <refname>=new <outer_class>.<inner_static class>();
+2.non-static class: belongs to the objects--inner class
+3.local class: declared in any method--inner class
+4.anonymous class: a class without name--inner class
+==only one object of the anonyms class is created
+5.
+==============================================================
+25/08/2020
+if we want to create object of class only ones then go for anonyms class.
+
+Package--grouping similar classes
+one more way to achive encapsulation
+path for package== javac -d D:\Assihnment7 <file_name>.<java>==>for package ccompiletaion/creation
+--if we are in the same path javac -d . <file.name>.<java>
+==>for running code file which contain package
+java <Package_name>.<fie.name>
+--if we create object of another class package then import another class package also
+syntax--import <package_name>.<class_name>;
+--jar file-->[ java archieve file ]
+
+-jar file
+save with <alterbative_name-for_main_file>.mf==>mainfile
+Main-Class:<package_name-of main file>.
+compilled
+jar -cmf <alterbative_name-for_main_file>.mf <jar_file_name>.jar <package_name_main_file>
+
+--run jar file
+java -jar <jar_file_name>.jar==>take this jar file ndrun program from anywhere
+ access controls:
+private==within class
+default=withinn package
+protected==within package and subclass
+public==every where
+
+--default class can access only within same package
+--public class can access from anywhere
+-------------------------------------
+Object [super class of all java classes]
+--to String()
+--equals()
+--clone()
+--hashCode()
+--getClass()
+--finalize()
+--wait()
+--wait(int sec)
+--wait(int sec,int mili)
+--notify()
+--notifyAll()
+=============================================================
+26/09/2020
+===In lambda expression--Functional Interface
+--no need to create subclass,method overidden,method creation---all can done in methods
+interface should be functional--only one abstract method
+---lambda function used only with inteface--noabstract class
+
+--to string method
+ ==e1.equals(e2)===objects are checked--it check both ref point to the same object or not--if not same return false otherwise true==reference euality
+
+==String class:
+String :an immutable sequeance of characters
+
+---create string
+iiusing literal
+using constructor
+--string()
+--string(String str)
+--string(byte ar[])
+--string(char ar[])
+
+if(<variable_name>.equalsIgnoreCase("tfg") && <variable_name>.equals("yftgj"))
+--<variable_name>.split(" ")---split spaces record in diff line
+String.join(":",ar);
+<s1>.concat(s2);
+
+
+using literals;
+String s1="ab";
+String s2="ab";
+String s3="cd";
+String pool
+--cd
+--ab--
+s1,s2--same reference variable
+
+using constructor--object
+String s1=new String("ab");
+String s2=new String("ab");
+String s3=new String("cd");
+
+StringBuffer--slower that builder--created multiple threads
+ -->mutable--changes can't be done
+ -->sysnchronized(thread safe)
+s.append();
+s.insert(3,5,"tvjg");
+s.replace(3,7,"hg");
+s.delete(3,7);
+
+StringBuilder--fater than buffer--not created multiple threads
+ -->mutable
+ -->not synchronized (not thread safe)
+
+==================================
+Exception Handling:
+five key words for exception handling:
+1.try--
+2.catch
+3.finally
+4.throw
+5.throws
+----------------
+all possible combinations are 
+try catch
+try finally
+try catch finally
+try catch catch catch...................finally
+==============================================================
+throw-- throw keyword used generate any exception explicitly
+syntax:
+        throw<Exception-Object>;
+Eg:
+   throw new ArithmeticException();
+
+parseInt==only except degits--if it contains charaters it gives numberFormat Exception error
+
+Throwable
+====Exception(Checked Exception)(compiletime)--compiler will check whether it is handled by exception or not
+--IOException--to avoid compile time exception
+ClassNotFoundException
+--FileNotFoundException
+RuntimeException
+-ArithmaticException
+-NumberFormatException
+
+====Error(unchecked exception)(runtime Exception)--compiler will not check whether the exception will be handle or not
+AssertionError
+ExceptionInInitializerBlockError
+
+throws IOException--Forward exception to the calling function/method
+
+if the super class method doesnt checked any exception then it will throw error in subclass
+
+NullPointerException--pointing ro null
+Every Exception occures at runtime
+---------------------------------------------------------------
+Variable length:--two paras not allowed in same method
+accepts 0 or more values--
+
+enum: a type where contents are predefined
+enum<enum_class>{
+  enum_content_list
+}
+------------------------------------------------------------------------
+Wrapper classes: class that provides wrapper around any primitive value to make it an object.
+Primitive types | Wrapper types
+boolean| Boolean
+char          	Char
+int	Integer
+byte	Byte
+short	Short
+long	Long
+float	Float
+double	Double
+
+Integer i=new Integer(10);==>i is a ref that point to object which contains 10 value
+int i=10-->value are stored in variables.
+
+Interger r2=Interger.valurOf(i);==>creates an object of i--Boxing
+
+Interger r2=456--456 stored in object --nd it can access by r2 reference directlly--Known as auto boxing
+                                         ===========
+
+Interger r1=new Integer(12);
+int i=r.intValue();---un-boxing
+                                       ==========
+int i=new Integer(12);---auto unboxing--value of the object stored in variable known as unboxing.
+
+Arithmetic operations are not performed on object --but using wrapper it is possible
+
+Interger r1=new Integer(12);
+Interger r2=new Integer(10);
+Interger r3=r1 + r2;
+to string method overridden in Integer class so ref hashcode not print overideen toString methods instace value is printed
+
+Generics:creating a general class--common class
+MyGen<T>{
+ T t-->T is general type--any type we can pass
+T t-->t is variable-->to fetch value of general type
+}
+=================================================================
+29/09/2020
+collections--different thing--it is a class--it has diff utility mthods
+Collection Framework--
+A framework (set of classes )to create dyanamic collection to store similar to dis-similar data elements
+
+only objects can be stored, primitive values can not be stored.
+
+========Collection--(extends)
+---List(implements)--
+1.ArrayList 
+    ========
+--multiple thread excuted at a time--
+--Collections.sort(a1);
+--ArrayList is slower than LinkedList
+--Random access inteface
+--Size is not given--default  size 10--(current capacity*3/2)+1
+--we donnt have copy constructor in java--so we use clonable
+--removeAll--remove common elements present in 1st obj , 2nd obj remain as it is
+--retainAll--remove uncommon elements from 1st obj , 2nd obj remain as it is
+we make object for traversing arraList elements becouse they contain each type of data elements
+--a.add()--to add ele
+--a.addAll(a1)--add all ele of a2 to a--a2 remain as it is
+--a.get(index)-->to access ele at particular index
+Iterator it=a.iterator()==>it is pointing to iterator type of objects
+-------------
+--Iterator is a interface--used to traverse any collection framework class
+--hasNext()--check next position has elemetment if true-- iterator shifts to next position and return element
+--it.remove()---element is removed from current position in original collection array using iterator ref variable
+(concurrent operation cannt possible in collection so we does 2 operation(printing,removing) simultaneously using iterator(at the time of traversing we also removed element from collection arrayList))
+--Collections cannt be traversed in reversed order
+
+ListIterator==we use List a ref to point to ArrayList object
+---------------
+--basic structure of linklist is doubleLinkedList
+using this we can traversed in reversed order
+like 1st we have to traversed all the arratList then we use ListIterator lit==list.hasPrevious()==>lit.previous();==to traversed in reverse direction
+
+Using ListIterator we can iterate in reverse order too. But by using iterate we can not.
+Iterator can use with all the collection but ListIterator can work only with list
+Using ListIterator we can do remove at particular index, replace at particular index, add at particular index but using iterate we cant.
+
+--elements can be accesed at particula index--object obj=<object_name>.get(index_no);
+for the size of the arrayList use <object_name>.size method
+
+--Using generic with ArrayList to restrict to use any of the datatypes values--used only particulat datatypes values.
+--then at the time of aaraithmatic operation no need of downcasting
+
+--methods are not synchronized
+2.LinkedList
+
+
+3.vector
+--v.capacity--default 10--how many elements are stored --it is a capacity
+--size--how many ele are present in vector
+--v.capacity--10*2--double the size if we enter any element and in second time incresed sized by 10
+--methods are synchronized
+--stack is subclass of vector
+--search--serach ele in stack nd return index of that ele
+--peek()--it will  return top elements of the stack
+--enumarations--interface
+
+
+---Set(implements)--all three maintains uniqness--
+    ==============
+if we dont want uniqness go for list
+1.HashSet(extends)--1.(LinkedHashSet)  
+--default capacity--16--new hashset created when 75% capacity occupied
+--order not preserved
+--elements stored at random
+--duplicates are not allowed
+--in these used bucket of hashcode--
+--hs.contains(668);==>if exist return true else false
+
+--uniqness maintain using hashcode and equal methods 		
+    1.(LinkedHashSet)===insertion order mainatin
+        =============  
+        --elements are stored at insertion order
+        --uniq elements --no repetitation
+--when control goes to the bucket hashcode overide method will be called internally then internally equal method callled
+ArrayList<Employee>  a=new ArrayList<Employee>();--Arraylist of employee type.
+--if we not overide hashcode and equal method no compile time error 
+--Object called to.String method internally
+
+
+   2.TreeSet(class)--SORTEDSET(it is an interface)--it is implements by treeset--homegeneous set only allowed
+      =========
+--elements are stored in sorted manner--ascendig order--
+maiantaines Uniqness--no need of sorting
+--if we want in desending order then apply logic
+--Other datatypes not allowed
+--we not overide hashcode and equal method compile time error will occur
+--hetrogeneous allowed
+--null insertion allowed
+--compareTo method is used to decide position --compareTo method overide by implementing the comparable inteface
+--if there is two tree set we can apply only one logic to tackle this problem we can create another interface for these
+--equals method is used to check two objects so it is not used here
+--in case of two logic we implements Compartor inteface on class
+--using comparable we go with only one logic using comparator we go with more tha one logic
+sortedSet============
+---sorted manner result will print
+
+=======================================================
+30/08/2020
+
+==========Stream---separate memory element--it is an interafce
+all the collection element(arralist) store in them
+--for each is used  to print element one by one
+strm.forEach(ele->System.out.println(ele));
+--Collectors.toList==>to get all the list
+set is used to get set
+
+--comparator is present in java.util--user defined sorting--equals and compareTo(obj o1,obj o2)
+--comparable is present in java.lang--
+--+ve indicates after add
+-- -ve indicates before add
+--  0 indicates discraded
+
+
+--Stream<Integer> strm=a1.stream();
+strm=strm.map(ele -> n+100)==>to return modified value from the existing data--like if you add incentive in the existing data
+--strm.forEach(ele->System.out.println(ele));
+--perform operations on every element of stream
+--Stream is used with collections to achieve the speed--for better perfomance(for large collections)
+--strm=strm.filter(ele-> ele%2==0);
+--strm.forEach(e->System.out.println(e));(filteration can be done using these way)
+--In filter we filter data nd then return
+--in mapping we modify data and then return
+--Comparator is used with Stream to get min value
+Optional<Integer> opt=strm.min(Comparator.comparing(n->n));
+Optional is object to catch the only one value
+
+===MAP==a Collection that stores elements in key value pair
+--keys are uniq
+--values can be repeated
+--putAll
+Map-m.putAll(m1)-->if same replace if diff print both
+--in map cannt do directly iterations.for that we have to do collection view then use iterations
+--1.HashMap--elements are stored randomly
+   --LinkedHashMap
+          --elements are stored in insertion order
+--2.TreeeMap
+       ---elements are stored using keys
+ 
+--set<String> keys=m.keySet();-->method will return set of keys
+and then use iterator to iterate one by one set of keys
+
+--Collection<Object> col=m.values();==>set of values can be stored in Collection variable and that values are of object type so thats y it is object type generic.
+then we iterate the values of Collection variable one by one using iterator
+
+set<Entry<String, Object>> s=m.entrySet();==>Entry is kind of object that can have two values that key  and value==>using entery we store both key values pair
+while()
+
+
+Revision
+Collection is a interface and 
+Collections is a class--it has some utility methods to perform some operations
+--chcked exception(compiler wil take care of that exceptions)
+1.IO exception--scanner i/o
+2.class not found--obje creaion time if class not mention
+
+unchecked(compiletime)measn runtime
+1.ArrayIndexOutOfBoundsException
+2.NumberFormatException
+3.ArithmaticException
+
+Collection is a interface and collections is class
+
+1.what is framework??
+Java Framework is the body or platform of pre-written codes used by Java developers to develop Java applications or web applications. In other words, Java Framework is a collection of predefined classes and functions that is used to process input, manage hardware devices interacts with system software
+--It provides readymade architecture.
+It represents a set of classes and interfaces.
+
+2.What is collection framework??
+--A framework (set of classes )to create dyanamic collection to store similar to dis-similar data elements
+
+--only objects can be stored, primitive values can not be stored.
+it ia work asa library these library is in java.util package
+
+--list-values are repated and stored in insertion order 
+  1arraylist
+set--uniq values--random stored--not indexing done--
+more types of list arraylist linklist stack vector
+
+set--hashset treeset and linked set
+
+--ques
+
+group of individual objects as a single entity--if you want to represnt group of indic obj as sing entit  then go for collect
+1st 2nd  3rd stu object
+collection framework:if u want to rep group of indi objec as a entity seve classe nd interfce req collect define sev cla nd interf whicj can be used to rep indi object as a sing entity req classes and interfaces are rep in cll frameworks defines dev class nf in used to represent
+
+===============================================================
+1/09/2020
+Java IO: uses Streams to do the read and write from to persistent area.
+
+Stream:flow of data from any input device to java app or from java app to any output device
+
+Input Devices
+--Keyword
+--hard disc File
+--networks
+
+Output Devices
+--Console
+--File
+--network
+
+Stream Classes
+--Byte stream
+--character stream
+
+File:a class that is abstraction(representation) of any file or  directory on the PC (file system)
+
+==to check whether it is exist or not==return true or false
+f.isDirectory();
+f.isFile();
+f.exists();
+
+ff,nm--1st argument for file name--2nd argu for extension of the file
+
+FileoutStream-- write byte by byte character
+FileInputStream-- read byte by byte character
+--if there is no character preesnt it will written -1
+--if thre is present then unicode of that char returm
+
+DataOutputStream
+--byte stream
+--used to write primitive or string value directly
+
+DataInputStream
+--byte stream
+--used to read primitive or string value directly
+
+Serialization:serialization is a process to save the state of any objects to any persistenet area(like file)
+
+seriable is done in ObjectOutput class
+
+De-serialization: De-serilization is the inverse process of serialization in which 
+
+FileWriter: characters stream to write characters to the file--it is faster than FileOutputStream
+
+FileRead: characters stream to read the chars from file
+
+BufferWritter: charater stream that can write group of data-->it cannt work alone--it require FileWriter
+
+BufferReader used with InputStreamReader to read whole line 1 at a time-->call readline method
+
+nio.file.Path;
+--relative path start from root
+--absolute pat start from directory
+
+FileInputStream--FileChannel
+buffer.flip--to get indx again--to get come back to original position used  flip
+
+===========================================================
+Multithreading:
+multiple softwares running on your pc--multitasking
+Thread: a light weight process
+Thread is an object of thread class in java
+
+Thread state/life cycle
+new (start)-->runnable--->running-->dead
+
+	     wait
+	    sleep
+	    waiting for io
+	   after
+	  sleeo( over)
+	 io completed
+	 then notify to runnable
+
+ways to create thread
+--by implementing runnable interface
+--by extending thread class
+
+methods used in threading
+=====================
+run():present in runnable interface--code present in run which we want to run as a separate thread(separate process)
+start():thread class method--new state to sunnable state
+sleep()-->used to lock state for particular time
+
+when we create object of thread class then it will go the new state -->when we call start method it will go runnable state
+
+after calling run method it is in running state after excution completed it will go to the dead state
+
+thread object also use in runnable interface to call particular casees after creating object of class pass that object to thread class object
+
+Thread.currentThread().getId()==>returns object of the current thread that is running
+
+th.join();==>waiting to complete given thread==>for that join method is called to the given thread
+
+basically join method is used to call on given thread object so main method wait till completion of that thread object
+
+threads are using one object to call the methods so object is reasirces
+
+same object is passed to same threads called as shared resources
+multithreaded--asynchronous behaviour--
+if we pass same object two two diff threads then id 1st thread gose to sleep then 2nd thread start its excution on the same object --that behaviour called as asynchronous behaviour
+=======================================================
+3/09/2020
+two ways to achive synchronization
+1.synchronization key
+2.synchronization block
+
+
+Synchronization
+only 1 thread can excute at a time
+
+Synchronized block used--when we want to synchronized some block of the method
+
+Synchronized block will be used when we want entire method synchronized
+
+Thread Communication:
+methods for thread communication
+-->wait()
+-->notify()
+Note:methods are from object
+
+notify and wait will be used in Synchronized thread
+
+Hashcode--internally converts local address of the object into an intger
+this is a object 1
+obj is a object 2
+
+when we  want to access the class defination then we use comparable
+
+=======================================================
+5/09/2020
+---------------------------------------------
+JDBC== Java Database Connectivity
+===========================
+User interface code[GUI]==>Code for user interaction
+
+Application Logic==>code perform operation on dara
+
+Data Storage==>store & manage data
+
+Front End Tech
+[write UI code & app logic]
+Eg. C,C++,Java.....
+
+Back End Tech.
+[to store & manage data]
+Eg.Oracle,MySql,.......
+
+JDBC Drivers==data transaction between java app and database
+mysql can develop jdbc driver==
+
+jDBC Drivers:-
+1.Type-1 [Jdbc Odbc Bridge]---(odbc)object databse connectivity
+2.Type-2 [Java API]--it is library of prewritten classes,that are free to use==the library contains compponents for managing input,database programming;
+3. Type-3 [Java Network Protocol]==>If we using diff databse present in same application
+4. Type-4 [Pure Java]==>
+
+New java project-->libraries-->add external JARs-->
+
+1--First load jdbc driver in your applications[mysql type-4]
+2--then make connection with datbase using ipaddress where mysql is running(locahost:3306),username ,password
+3.Data Transaction-->write query code
+
+execution of query statements
+==.execute():boolean--ddl query fo callbal statmemts
+1.executeUpdate(): int--DML query--dml->insert/delete/update
+2.executeQuery():ResultSet==dql--select query--then only return true--else return false for DML DDL
+
+ref.next()==>shift from current row to next if it contains any row return true
+
+check data==> hasNext()-->then shift ref pointer
+get data==>next()
+
+shifiting ref  pointer==>then check data==>next()
+                                             ^
+                                             ||                           
+                                        get data()==>getter methds.
+ 
+query statements
+1.Statement
+2.PreparedStatement
+3.Callable Statement
+
+PreparedStatement
+==================
+if we want to excute query multiple times==>then we need to use preparedStatement-->it will compiled only once
+
+====================================================
+6/09/2020
+callableStatement--->for caaling procedure
+

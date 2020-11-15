@@ -1,0 +1,147 @@
+1.Abstract class must have only abstract methods. True or false?
+
+2. Is it compulsory for a class which is declared as abstract to have at least one abstract method?
+
+3.Can we use the “abstract” keyword with constructor, Instance Initialization Block and Static Initialization Block?
+
+4.Why can final and abstract can not be used at a time?
+Can we instantiate a class which does not have even a single abstract method but declared as abstract?
+
+5.Can we declare abstract methods as private? Justify your answer?
+
+6.We can’t instantiate an abstract class. Then why constructors are allowed in abstract class?
+
+ 7.Can we declare abstract methods as static?
+
+ 8.Can a class contain an abstract class as a member?
+
+9.Abstract classes can be nested. True or false?
+
+10.Can we declare abstract methods as synchronized?
+
+11.Can we declare the local inner class as abstract?
+
+12.Can abstract method declaration include throws clause?
+
+13.Can we re-assign a value to a field of interfaces?
+
+14.Can we declare an Interface with an “abstract” keyword?
+
+ 15.For every Interface in java, .class file will be generated after compilation. True or false?
+
+ 16.Can we override an interface method with visibility other than public?
+
+ 17.Can interfaces become local members of the methods?
+
+18.Can an interface extend a class?
+
+19.Like classes, does interfaces also extend Object class by default?
+
+20.Can interfaces have static methods?
+
+21.Can an interface have a class or another interface as it’s members?
+
+22.What are marker interfaces? What is the use of marker interfaces?
+
+23.What is the use of the final keyword in java?
+
+24.Can we change the state of an object to which a final reference variable is pointing?
+
+25.What is the main difference between abstract methods and final methods?
+
+26What is the use of final class?
+
+27Can we change the value of an interface field? If not, why?
+
+28Where can we initialize a final non-static global variable if it is not initialized at the time of declaration?
+
+29What are final class, final method and final variable?
+
+30Where can we initialize a final static global variable if it is not initialized at the time of declaration?
+
+31Can we use non-final local variables inside a local inner class?
+
+32Can we declare constructors as final?
+
+33Can you create an object without using a new operator in Java?
+
+34.is java 100% object oriented
+
+35.Types of inheritance
+
+36.can we extends two classes
+
+37.use of constructor
+
+38.default specifier for constructor--public
+
+39.can we define constructor private--yes--then we cannt call to the outside of the class
+
+40.Diamond problem--how java resolved it--by using interface
+
+41.what is abstract class
+
+42.what is static class
+
+43.have you written main method in java--why it is public  static void main 
+
+44.explain 4 pillaours of oops
+
+45.diff between cpp and java
+
+46.how to call constructor
+
+47.what is JIT
+
+48.what is Constructor chaining
+
+49.diff between this and super
+
+50.how we implement multiple inheritance
+
+51.object class is the base class-which package is this--java.lang
+
+52.what is collection
+
+53.diff between array and arrayList
+
+54.what is jre,jdk
+
+55.What is string--it is a class
+
+56.diff between stringBuilder, stringBuffer
+
+57.Constructor have any return type
+
+58.Access specifier--explain Scope of each one
+default can access withing same package
+
+59.can we declare Abstract method final
+
+60.explain Compile time and runtime polymorphism
+
+61.what is single ton class??
+
+62.what is exception
+   diff between error and exception
+have you heard about checked and unchecked exception
+
+63.what is the purpose of string
+
+64.what is thread
+
+65.what is collection
+66.causes of exception--ans types of exception
+
+67.How to handle exception
+
+68.what is difference between throws and throw
+
+69.what is final keyword in java
+
+70.what is upcasting and downcasting
+
+java program run without JDk
+--java is machine independent
+--it is part of jre
+

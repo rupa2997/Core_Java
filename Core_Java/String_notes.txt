@@ -1,0 +1,46 @@
+String
+===========
+object are immutable
+--ones we create object we cannt change again within the same object.
+--if we want to change then create another object and assign that chnage to the newly created object
+eg1.:String  a=new String("Rupali");
+  a.concat("Pangare");
+System.out.println(s); //Rupali
+
+--Double equal operator meant for referance comparison it check whether both the refrenec point to the same object or not
+--equals()--methods meant for content comparison--in object equals method is overidden
+eg2.String  a1=new String("Rupali");
+String  a2=new String("Rupali");
+System.out.println(a1==a2);//false
+System.out.println(a1.equals(a2));//true
+
+SCP==>same object is used for future reference 
+=====
+--one copy always cfreated in scp for every literals
+nw=ew object always created in heap area
+==>Memory utilizationpurpose==reusablility
+String  a1="Rupali";==>only one object is created==>SCP
+String  a1=new String("Rupali");==>two object is created==>
+SCP(String constant pool)==>heap
+
+StringBuffer
+===============
+ object are mutable
+--ones we create object we can able change again within the same object.
+eg:StringBuffer  a=b=new StringBuffer("Rupali");
+  a.append("Pangare");
+System.out.println(s); //RupaliPangare
+
+--Double equal operator meant for referance comparison it check whether both the refrenec point to the same object or not
+----equals()--methods meant for referance/address comparison--it will not overide 
+eg2.StringBuffer  a1=b=new StringBuffer("Rupali");
+StringBuffer  a2=new StringBuffer("Rupali");
+System.out.println(a1==a2);//false
+System.out.println(a1.equals(a2));//false
+
+final string buffer==changes done in same refernce --initial capa 16==if size is incfesed==(curr+1)*2
+string changes== ref changed===capacity always equal to size
+String buffer all methods are synchronized
+all immutable and wrapper classes are final
+
+Importance of scp

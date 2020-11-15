@@ -1,0 +1,120 @@
+Inside throwable classes:
+1.e.printStackTrace()-->name of exception:description of exception:Stacktrace name
+2.s.o.p(e.toString())--s.o.p(e)--name of exception:description of exception
+3.s.o.p(e.getMessage())-->only description of the error
+
+Exception e==>AE,FNFE,SQL Exception
+multiple exceptions
+catch(AE e)
+catch(FileNoyFoundException)
+catch(SQLException)
+catch(Exception e)
+
+cleaup code--resouce deallocation code
+
+finally block-->always excute whether exception occur or not.handled or not handled-->in case of abnormal termination also finally block willl be excuted
+---if the jvm shutdown explitliy finallt block not excuted
+--or in case Systemexit(0); also finally no excuted
+Systemexit(0);--Normal termination
+Systemexit(-1);--Anormal termination
+
+
+--in case if we not mention approritae catch block then finally block excute and abonormal termination
+
+--in case exception occur at catch block, finally excute
+--finally block generate exception--abnormal termination
+
+--throw===> 
+keyword is used to throw explicilty mention exception
+ object to jvm
+
+==>throw new AE();-->creation exception object explicitly--handover our created exception object to the jvm manually
+--throw keyword suitable for customized exception not for pre defined exception
+
+throws exception | RunTimeException | Throwable
+--Thread.sleep(100);handled by IE exception
+it can handled using try catch or throws keyword
+p s v m()throws InterupptedException---jvm method responsible to handled these exception--throes keyword is only used to convince compiler
+
+
+Throwable-->Exception-->runtimeexception-->ourclass
+
+printStackTrace method inside Throwable method
+
+When we throw msg to the customized exception then description catch by the default exception i.e-->Throwable
+
+
+--if we mention extends RunTimeException--unchecked
+--if we mention extends Exception--checked
+
+
+
+
+
+
+
+
+
+
+
+throws
+--throws is required for checked exception only
+--throes keyword is only used to convince compiler and its usage dosoednot prevent abnormal termination of the programs
+--child class contain throws keyword then parent also need to contain that exception 
+
+exception is checked exception CE
+Error is unchecked exception RE
+
+--AE--uncheck
+--Exception--pC
+--IO--FC
+--Error--UC
+--IE--FC(Interrutpted exception)
+
+
+Checked  and Unchecked Exception
+===================================
+---Every exception occured at runtime exception only
+
+Checked--exception which are checked by compiler to run code smooth at runtime called as checked exception
+eg--HallTicketCheckException,
+        PenNotWorkingException
+       --  FileNotFoundException
+        --InterupptedException--Unreported exception--
+         eg:-if there is thread and there might posiibility of occuring any exception so if we cannt handle exception it gives Ceroor that interruppted exception 
+ 
+RE:Unchecked Exception
+Threse are some exception which are not checked by compiler 
+such exception called as uncheckede Exception
+RE:	BomBlastException
+      	 ArithmeticException
+ 	NulPointer Exception
+	IndexOutOfBoundsException
+		--ArraIOOBE
+		--StringIOOBE
+
+
+IOE:(Checked)	EOFException
+	FileNotFoundException
+
+InterrutedE::(Checked)
+
+SQLE::(Checked)
+RealTimeException
+
+Error(RE)(Unchecked)
+
+--VMError
+	--StackOverfloeErr
+	--OutOfMemoryError
+--LinkageError
+	verifyError
+
+--AsserrtionError
+
+
+
+
+
+
+
